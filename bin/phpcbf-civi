@@ -18,4 +18,4 @@ PHPCS_STD="$PRJDIR/vendor/drupal/coder/coder_sniffer/Drupal"
 ###############################################################################
 ## Function library
 
-eval "$BINDIR/phpcbf" --standard="$PHPCS_STD" "$@"
+eval "$BINDIR/phpcbf" --standard="$PHPCS_STD" --sniffs=Generic.Arrays.DisallowLongArraySyntax "$@"
